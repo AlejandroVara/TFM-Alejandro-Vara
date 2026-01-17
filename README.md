@@ -19,9 +19,9 @@ The proposed architecture is designed as a multi-input, multi-output deep neural
 
 We define two datasets, $X^A$ and $X^B$, which possess different feature spaces and dimensionalities. Each dataset is partitioned into private and common feature sets: 
 
-    -    $X_p^A$ and $X_p^B$ represent the private (dataset-specific) features.
+$X_p^A$ and $X_p^B$ represent the private (dataset-specific) features.
     
-    -    $X_c^A$ and $X_c^B$ represent the common features shared between both domains.
+$X_c^A$ and $X_c^B$ represent the common features shared between both domains.
 
 
 Let us consider $X^A$ is significantly smaller than $X^B$. Our objective is to enhance the prediction capability of the model on $X^A$ by improving the representation of its common attributes through the auxiliary information in $X^B$.
