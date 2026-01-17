@@ -43,8 +43,8 @@ This repository contains all materials related to the thesis, serving as a compr
 
 - **Thesis Document:** The full memory of the thesis, providing detailed explanations of the methodology and experiments.  
 - **Preprocessing:** A folder containing the data ingestion and preparation scripts:
-  - `.ps1` scripts used to import data into the PostgreSQL database.
-  - SQL script with all queries required to construct the dataset used for the experiments.
+  - `.ps1` scripts used to help import data into the PostgreSQL database.
+  - SQL script with all queries required to construct the dataset used for the experiments in the PostgreSQL database.
 - **Experiments:** For each experiment, a dedicated folder contains:
   - A Python notebook with the experimental code and the results of each cell
   - Results saved in `.npz` format.
