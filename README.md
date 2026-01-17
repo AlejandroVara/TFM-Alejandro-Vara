@@ -36,6 +36,24 @@ The latent representations are then concatenated (e.g., $h_p^A \oplus h_c^A$), f
 
 This multi-task learning environment allows the shared encoder to receive gradients from both paths. The larger auxiliary dataset $X^B$ provides a stable anchor for $E_c$, while gradients from $X^A$ fine-tune the shared space and the private encoder $E_p^A$ to leverage specific features. This dual-gradient flow is the fundamental mechanism for transferring knowledge from the larger dataset to the smaller one.
 
-### Notes
-The notebooks assume the availability of preprocessed data which are not included, one needs to download MIMIC-III first and do all the preprocessing
-python3.11.9
+
+## Repository
+
+This repository contains all materials related to the thesis, serving as a comprehensive guide. It includes:
+
+- **Thesis Document:** The full memory of the thesis, providing detailed explanations of the methodology and experiments.  
+- **Preprocessing:** A folder containing the data ingestion and preparation scripts:
+  - `.ps1` scripts used to import data into the PostgreSQL database.
+  - SQL script with all queries required to construct the dataset used for the experiments.
+- **Experiments:** For each experiment, a dedicated folder contains:
+  - A Python notebook with the experimental code and the results of each cell
+  - Results saved in `.npz` format.
+  - Plots and visualizations generated from the analysis.
+
+## Notes
+
+The notebooks assume that the preprocessed data is available, which is not included in this repository.  
+To run the experiments, you must first download the **MIMIC-III** dataset and perform all preprocessing steps.  
+
+The code was developed and tested with **Python 3.11.9**.
+
