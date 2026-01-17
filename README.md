@@ -13,15 +13,14 @@ Ultimately, this work provides a scalable blueprint for clinical data codificati
 
 
 The proposed architecture is designed as a multi-input, multi-output deep neural network that facilitates knowledge transfer through a shared latent space. The core of the model consists of three distinct encoding blocks: a shared encoder ($E_c$) and two independent private encoders ($E_p^A$ and $E_p^B$), as illustrated in the next figure.
+
 <img width="50%" alt="Architecture" src="https://github.com/user-attachments/assets/17e53262-fc95-4bf1-8e2f-3666075a5583" />
 
 
 We define two datasets, $X^A$ and $X^B$, which possess different feature spaces and dimensionalities. Each dataset is partitioned into private and common feature sets: 
-\begin{itemize}
-    \item $X_p^A$ and $X_p^B$ represent the private (dataset-specific) features.
-    \item $X_c^A$ and $X_c^B$ represent the common features shared between both domains.
-\end{itemize}
-\FloatBarrier
+    -    $X_p^A$ and $X_p^B$ represent the private (dataset-specific) features.
+    -    $X_c^A$ and $X_c^B$ represent the common features shared between both domains.
+
 
 Let us consider $X^A$ is significantly smaller than $X^B$. Our objective is to enhance the prediction capability of the model on $X^A$ by improving the representation of its common attributes through the auxiliary information in $X^B$.
 
