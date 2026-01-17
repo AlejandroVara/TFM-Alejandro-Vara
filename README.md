@@ -18,7 +18,9 @@ The proposed architecture is designed as a multi-input, multi-output deep neural
 
 
 We define two datasets, $X^A$ and $X^B$, which possess different feature spaces and dimensionalities. Each dataset is partitioned into private and common feature sets: 
+
     -    $X_p^A$ and $X_p^B$ represent the private (dataset-specific) features.
+    
     -    $X_c^A$ and $X_c^B$ represent the common features shared between both domains.
 
 
